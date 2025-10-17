@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme {
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Use: primary CTA background, highlights, links, cards accent. */
+  --color-brand-cyan: #5AB0C8;
+  --color-cyan-50: #f0fafb;
+  --color-cyan-100: #cff6fa;
+  --color-cyan-200: #a5eef4;
+  --color-cyan-300: #67dee8;
+  --color-cyan-400: #22c5d3;
+  --color-cyan-500: #5AB0C8;
+  --color-cyan-600: #4a94a9;
+  --color-cyan-700: #3e7889;
+  --color-cyan-800: #305c6a;
+  --color-cyan-900: #284954;
+
+  /* Use: secondary CTAs, emphasis, icons, microcopy status indicators. */
+  --color-brand-red: #E8444E;
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-200: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #E8444E;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+  --color-red-900: #7f1d1d;
+
+  /* Use: success states, badge backgrounds, subtle accents in services. */
+  --color-brand-green: #45B175;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #45B175;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+
+  /* Use: page background and large card backgrounds to give a slightly warm, trustworthy feel. */
+  --color-brand-cream: #FBF5EC;
+  --color-cream-50: #FBF5EC;
+  --color-cream-100: #f6ead5;
+  --color-cream-200: #ecd4ab;
+  --color-cream-300: #deb976;
+  --color-cream-400: #d39c47;
+  --color-cream-500: #c7862a;
+  --color-cream-600: #ab6f20;
+  --color-cream-700: #8e551d;
+  --color-cream-800: #74461f;
+  --color-cream-900: #623c1e;
+
+  /* Use: headings, text, strong contrast. */
+  --color-brand-ink: #0F1724;
+  --color-ink-50: #f8fafc;
+  --color-ink-100: #f1f5f9;
+  --color-ink-200: #e2e8f0;
+  --color-ink-300: #cbd5e1;
+  --color-ink-400: #94a3b8;
+  --color-ink-500: #64748b;
+  --color-ink-600: #475569;
+  --color-ink-700: #334155;
+  --color-ink-800: #1e293b;
+  --color-ink-900: #0F1724;
+
+  /* Use:for secondary text and UI separators */
+  --color-brand-gray: #6B7280;
+  --color-brand-surface: #F3F4F6;
+ 
 }
