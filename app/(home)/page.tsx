@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Navbar from '../components/Navbar';
+import ContactForm from '../components/ContactForm';
+import ImageCarousel from '../components/ImageCarousel';
+import { CAROUSEL_DATA } from '../config/constants';
 
 // Structured data for SEO
 const jsonLd = {
@@ -256,111 +259,87 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-20 bg-white">
+      {/* Clients & Partners Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Our Clients Carousel */}
+          <div className="mb-20">
+            <ImageCarousel
+              images={CAROUSEL_DATA.clients.images}
+              title={CAROUSEL_DATA.clients.title}
+              description={CAROUSEL_DATA.clients.description}
+              direction="left"
+              speed={15}
+            />
+          </div>
+
+          {/* Authorized Brands Carousel */}
+          <div>
+            <ImageCarousel
+              images={CAROUSEL_DATA.brands.images}
+              title={CAROUSEL_DATA.brands.title}
+              description={CAROUSEL_DATA.brands.description}
+              direction="right"
+              speed={7}
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="min-h-screen py-20 relative">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <Image
+            src="/img/contact us background.jpg"
+            alt="Contact us background"
+            fill
+            className="object-cover"
+            priority={false}
+          />
+          {/* <div className="absolute inset-0 bg-black/50"></div> */}
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-ink-900 mb-6">Get In Touch</h2>
-            <p className="text-xl text-ink-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h2>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Ready to start your next project? Let's discuss how we can help you achieve your goals.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <h3 className="text-2xl font-semibold text-ink-900 mb-6">Contact Information</h3>
+          {/* Contact Information - Centered on Top */}
+          <div className="mb-12">
+            <div className="flex flex-row justify-center items-center gap-6 sm:gap-16">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-600/90 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-lg sm:text-xl">📧</span>
+                </div>
+                <div className="text-left">
+                  <h4 className="font-medium text-white text-sm sm:text-base">Email</h4>
+                  <p className="text-gray-200 text-xs sm:text-sm">info@tfclimited.com</p>
+                </div>
+              </div>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-cyan-600 text-xl">📧</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-ink-900">Email</h4>
-                    <p className="text-ink-600">info@tfclimited.com</p>
-                  </div>
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-600/90 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-lg sm:text-xl">📞</span>
                 </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-cyan-600 text-xl">📞</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-ink-900">Phone</h4>
-                    <p className="text-ink-600">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-cyan-600 text-xl">📍</span>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-ink-900">Address</h4>
-                    <p className="text-ink-600">123 Business Street<br />Suite 100, City, State 12345</p>
-                  </div>
+                <div className="text-left">
+                  <h4 className="font-medium text-white text-sm sm:text-base">Phone</h4>
+                  <p className="text-gray-200 text-xs sm:text-sm">+1 (555) 123-4567</p>
                 </div>
               </div>
             </div>
-            
-            {/* Contact Form */}
-            <div className="bg-cream-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold text-ink-900 mb-6">Send us a message</h3>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-ink-700 mb-2">First Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 bg-white border border-cream-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-ink-700 mb-2">Last Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 bg-white border border-cream-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-ink-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 bg-white border border-cream-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
-                    placeholder="john@example.com"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-ink-700 mb-2">Subject</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 bg-white border border-cream-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
-                    placeholder="How can we help you?"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-ink-700 mb-2">Message</label>
-                  <textarea 
-                    rows={5}
-                    className="w-full px-4 py-3 bg-white border border-cream-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 resize-none"
-                    placeholder="Tell us about your project..."
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit" 
-                  className="w-full bg-cyan-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-cyan-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
-                >
-                  Send Message
-                </button>
-              </form>
+          </div>
+          
+          {/* Contact Form - Centered */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-2xl">
+              <ContactForm />
             </div>
           </div>
         </div>
