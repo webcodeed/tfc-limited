@@ -32,3 +32,32 @@ export const COMPANY_INFO = {
     zip: '12345'
   }
 }
+
+// Carousel data
+export const CAROUSEL_DATA = {
+  clients: {
+    title: 'Trusted by Industry Leaders',
+    description: 'We proudly serve leading organizations across oil & gas, telecommunications, and maritime sectors, delivering excellence that drives their success forward.',
+    images: [
+      { src: 'https://i.ibb.co/xK2B54XC/11-PLC-Logo.jpg', alt: '11 PLC' },
+      { src: 'https://i.ibb.co/p6dTKPSP/BEST-Logo.webp', alt: 'BEST' },
+      { src: 'https://i.ibb.co/R4BBSJCq/CNSS-Logo.jpg', alt: 'CNSS' },
+      { src: 'https://i.ibb.co/twKrFfpP/Energia-Logo.png', alt: 'Energia' },
+      { src: 'https://i.ibb.co/zVN3Xw3V/Midwestern-Logo.webp', alt: 'Midwestern' },
+      { src: 'https://i.ibb.co/hJCnSG8s/Newcross-Logo.png', alt: 'Newcross' },
+      { src: 'https://i.ibb.co/LdS1NDQr/Nigerian-Ports-Logo.jpg', alt: 'Nigerian Ports Authority' },
+      { src: 'https://i.ibb.co/tSDpr03/pan-ocean.webp', alt: 'Pan Ocean' },
+      { src: 'https://i.ibb.co/kgJYZDxm/Total-Logo.webp', alt: 'Total' }
+    ]
+  },
+  brands: {
+    title: 'Quality Equipment Brands',
+    description: 'We utilize industry-leading communication equipment from world-class manufacturers to deliver reliable, high-quality services to our clients.',
+    images: [
+      { src: 'https://i.ibb.co/PzQdrYff/codan-LOGO.png', alt: 'Codan' },
+      { src: 'https://i.ibb.co/d0nHkbWy/ICOM-LOGO.png', alt: 'ICOM' },
+      { src: 'https://i.ibb.co/WWXKG11J/Motorola-Logo.png', alt: 'Motorola' },
+      { src: 'https://i.ibb.co/HpzNC150/PANASONIC-Logo.webp', alt: 'Panasonic' }
+    ]
+  }
+}
