@@ -47,35 +47,80 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section id="home" className="min-h-screen bg-gradient-to-br from-cyan-600 via-ink-700 to-cyan-800 text-white flex items-center relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
+      <section 
+        id="home" 
+        className="min-h-screen relative overflow-hidden flex items-center"
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://i.ibb.co/8gbXX5BJ/Tfc-Background-image.png"
+            alt="TFC Background"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+            unoptimized
+          />
+        </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Welcome to <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-green-200">
-              TFC Limited
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl mb-8 max-w-3xl mx-auto opacity-90">
-            Your trusted partner in innovative business solutions and exceptional service delivery
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#about" 
-              className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 border border-white/20"
-            >
-              Learn More About Us
-            </a>
-            <a 
-              href="#services" 
-              className="bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-cyan-700 transition-colors duration-300"
-            >
-              Our Services
-            </a>
+        {/* Background Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        
+        {/* Floating particles effect */}
+        {/* <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full opacity-70 animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyan-300 rounded-full opacity-50 animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-green-400 rounded-full opacity-40 animate-pulse" style={{animationDelay: '3s'}}></div>
+        </div> */}
+        
+        <div className="relative z-10 max-w-7xl px-4 sm:px-6 md:10 xl:px-30 flex items-center justify-start min-h-screen py-20">
+          {/* Main Content */}
+          <div className="max-w-3xl text-white space-y-6">
+            {/* Badge */}
+            <div className="inline-flex items-center space-x-2 bg-cyan-600/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 py-2 text-sm">
+              <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
+              <span className="text-cyan-200">Leading Telecommunications Solutions</span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Connecting Excellence <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">
+                Through Innovation
+              </span>
+            </h1>
+            
+            {/* Subheading */}
+            <div className="space-y-4">
+              <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
+                Advanced Telecommunications & Digital Infrastructure Solutions
+              </p>
+              <p className="text-base text-gray-300 max-w-2xl">
+                We Connect Your Vision to Reality with Expert Network Engineering, 
+                Cutting-Edge Technology, and Unmatched Service Quality
+              </p>
+            </div>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <a 
+                href="#contact" 
+                className="bg-gradient-to-r from-cyan-600 to-cyan-700 text-white px-8 py-4 rounded-full font-semibold hover:from-cyan-700 hover:to-cyan-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center"
+              >
+                Get In Touch
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a 
+                href="#services" 
+                className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 flex items-center justify-center"
+              >
+                Discover More
+              </a>
+            </div>
           </div>
         </div>
       </section>
