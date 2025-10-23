@@ -67,27 +67,19 @@ export default function Home() {
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         
-        {/* Floating particles effect */}
-        {/* <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400 rounded-full opacity-70 animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyan-300 rounded-full opacity-50 animate-pulse" style={{animationDelay: '2s'}}></div>
-          <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-green-400 rounded-full opacity-40 animate-pulse" style={{animationDelay: '3s'}}></div>
-        </div> */}
-        
-        <div className="relative z-10 max-w-7xl px-4 sm:px-6 md:10 xl:px-30 flex items-center justify-start min-h-screen py-20">
+        <div className="relative z-10 max-w-7xl px-4 sm:px-6 md:px-10 xl:px-30 flex items-center justify-start min-h-screen py-20">
           {/* Main Content */}
           <div className="max-w-3xl text-white space-y-6">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-cyan-600/20 backdrop-blur-sm border border-cyan-400/30 rounded-full px-4 py-2 text-sm">
               <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-              <span className="text-cyan-200">Leading Telecommunications Solutions</span>
+              <span className="text-cyan-200">Reliable Communication. Proven Performance.</span>
             </div>
             
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Connecting Excellence <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-brand-green">
                 Through Innovation
               </span>
             </h1>
@@ -305,11 +297,11 @@ export default function Home() {
       </section>
 
       {/* Clients & Partners Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
           
           {/* Our Clients Carousel */}
-          <div className="mb-20">
+          {/* <div className="mb-20">
             <ImageCarousel
               images={CAROUSEL_DATA.clients.images}
               title={CAROUSEL_DATA.clients.title}
@@ -317,10 +309,10 @@ export default function Home() {
               direction="left"
               speed={15}
             />
-          </div>
+          </div> */}
 
           {/* Authorized Brands Carousel */}
-          <div>
+          {/* <div>
             <ImageCarousel
               images={CAROUSEL_DATA.brands.images}
               title={CAROUSEL_DATA.brands.title}
@@ -330,8 +322,8 @@ export default function Home() {
             />
           </div>
 
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="min-h-screen py-20 relative">
