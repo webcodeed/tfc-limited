@@ -108,7 +108,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-cyan-600 to-cyan-700 text-white px-8 py-4 rounded-full font-semibold hover:from-cyan-700 hover:to-cyan-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center"
               >
                 Get In Touch
-                <ArrowRight className="w-5 h-5 ml-2" />
+                {/* <ArrowRight className="w-5 h-5 ml-2" /> */}
               </Link>
               <Link
                 href="#services"
@@ -135,19 +135,6 @@ export default function Home() {
           </div> */}
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* <div className="relative h-full order-2 lg:order-1"> */}
-              {/* <div className="rounded-2xl p-8 h-full"> */}
-              {/* <div className="w-50 h-50">
-                <Image
-                  src="https://i.ibb.co/wNrYBgRx/tfc-about.jpg"
-                  alt="About us image"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                /> */}
-                {/* </div> */}
-              {/* </div>
-            </div> */}
 
             <div className="relative h-full order-2 lg:order-1">
               <div className="relative w-full h-[400px] lg:h-full overflow-hidden">
