@@ -5,7 +5,8 @@ import Navbar from '../components/Navbar'
 import ContactForm from '../components/ContactForm'
 import ImageCarousel from '../components/ImageCarousel'
 import TitleHead from '../components/TitleHead'
-import { CAROUSEL_DATA } from '../config/constants'
+import Footer from '../components/Footer'
+import { CAROUSEL_DATA, SERVICES_DATA } from '../config/constants'
 
 // Structured data for SEO
 const jsonLd = {
@@ -144,13 +145,14 @@ export default function Home() {
                   fill
                   className="object-cover rounded-2xl"
                   unoptimized
+                  priority
                 />
               </div>
             </div>
 
             <div className="space-y-6 order-1 lg:order-2">
               <TitleHead item="Our story" />
-              <h3 className="text-2xl md:text-3xl font-bold text-ink-900 mb-4">
+              <h3 className="text-2xl lg:text-3xl font-bold text-ink-900 mb-4">
                 Building excellence through innovation, integrity, and
                 unwavering commitment to our clients
               </h3>
@@ -176,66 +178,48 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="min-h-screen py-20 bg-white">
+      <section id="services" className="relative min-h-screen py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-ink-900 mb-6">
-              Our Services
-            </h2>
-            <p className="text-xl text-ink-600 max-w-3xl mx-auto">
-              Comprehensive solutions tailored to meet your unique business
-              needs
-            </p>
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 lg:mb-16">
+            <div className="mb-6 lg:mb-0 max-w-3xl">
+              <TitleHead item="Our services" />
+              <h2 className="text-2xl lg:text-3xl font-bold text-ink-900 mt-4">
+                From installation to maintenance, we provide integrated communication systems that keep you connected, securely and efficiently.
+              </h2>
+            </div>
+            <div className="hidden lg:block lg:ml-8">
+              <Link
+                href="#contact"
+                className="inline-flex items-center bg-gradient-to-r from-cyan-600 to-cyan-700 text-white px-6 py-3 rounded-full font-semibold hover:from-cyan-700 hover:to-cyan-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Business Consulting',
-                description:
-                  'Strategic guidance to optimize your business operations and drive sustainable growth.',
-                icon: '💼',
-              },
-              {
-                title: 'Digital Solutions',
-                description:
-                  'Cutting-edge technology solutions to digitize and streamline your business processes.',
-                icon: '💻',
-              },
-              {
-                title: 'Project Management',
-                description:
-                  'Expert project management services to ensure timely and successful project delivery.',
-                icon: '📊',
-              },
-              {
-                title: 'Technical Support',
-                description:
-                  '24/7 technical support to keep your systems running smoothly and efficiently.',
-                icon: '🔧',
-              },
-              {
-                title: 'Training & Development',
-                description:
-                  "Comprehensive training programs to enhance your team's skills and capabilities.",
-                icon: '🎓',
-              },
-              {
-                title: 'Quality Assurance',
-                description:
-                  'Rigorous quality assurance processes to ensure excellence in every deliverable.',
-                icon: '✅',
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="group bg-cream-50 hover:bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-cream-100 hover:border-cyan-200"
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-ink-900 mb-4 group-hover:text-cyan-600 transition-colors">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+            {SERVICES_DATA.map((service, index) => (
+              <div key={index} className={`group bg-white sticky top-30 left-0 px-5 md:px-0 md:static`}>
+                {/* Service Image */}
+                <div className="relative w-full aspect-[4.5/5] mb-4 overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    unoptimized
+                  />
+                </div>
+                
+                {/* Service Title */}
+                <h3 className="text-lg font-semibold text-ink-900 mb-2 group-hover:text-cyan-600 transition-colors duration-200">
                   {service.title}
                 </h3>
-                <p className="text-ink-600 leading-relaxed">
+                
+                {/* Service Description */}
+                <p className="text-md text-ink-600 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -247,75 +231,50 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="min-h-screen py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-ink-900 mb-6">
-              Featured Projects
+          <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2 mb-16'>
+          <div className="">
+            <TitleHead item="Our projects" />
+            <h2 className="text-2xl lg:text-3xl font-bold text-ink-900 mt-4 max-w-3xl">
+              Proven Solutions, Real-World Impact
             </h2>
-            <p className="text-xl text-ink-600 max-w-3xl mx-auto">
-              Showcasing our commitment to excellence through successful project
-              deliveries
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <p className='text-ink-600 max-w-lg'>
+          From government installations to private sector deployments, our work reflects over 30 years of consistent delivery and technical excellence.
+          </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: 'Enterprise Digital Transformation',
-                category: 'Digital Solutions',
-                description:
-                  'Complete digital overhaul for a leading manufacturing company, resulting in 40% efficiency improvement.',
+                image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&crop=center',
+                alt: 'Network Infrastructure Project'
               },
               {
-                title: 'Financial Services Platform',
-                category: 'Software Development',
-                description:
-                  'Secure and scalable financial platform serving over 100,000 users with zero downtime.',
+                image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=600&h=400&fit=crop&crop=center',
+                alt: 'Radio Communication Project'
               },
               {
-                title: 'Supply Chain Optimization',
-                category: 'Business Consulting',
-                description:
-                  'Strategic consulting project that reduced operational costs by 25% for a retail chain.',
+                image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center',
+                alt: 'Digital Solutions Project'
               },
               {
-                title: 'Healthcare Management System',
-                category: 'Digital Solutions',
-                description:
-                  'Comprehensive healthcare management solution improving patient care and operational efficiency.',
-              },
-              {
-                title: 'E-commerce Marketplace',
-                category: 'Web Development',
-                description:
-                  'Multi-vendor e-commerce platform with advanced features and seamless user experience.',
-              },
-              {
-                title: 'Data Analytics Dashboard',
-                category: 'Analytics',
-                description:
-                  'Real-time analytics dashboard providing actionable insights for data-driven decision making.',
-              },
+                image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600&h=400&fit=crop&crop=center',
+                alt: 'Field Engineering Project'
+              }
             ].map((project, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-cream-100 hover:border-cyan-200"
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg"
               >
-                <div className="h-48 bg-gradient-to-br from-cyan-500 to-ink-600 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <span className="inline-block bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-ink-900 mb-3 group-hover:text-cyan-600 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-ink-600 leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  unoptimized
+                />
               </div>
             ))}
           </div>
@@ -323,11 +282,11 @@ export default function Home() {
       </section>
 
       {/* Clients & Partners Section */}
-      {/* <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       {/* Our Clients Carousel */}
-      {/* <div className="mb-20">
+      <div className="mb-20">
             <ImageCarousel
               images={CAROUSEL_DATA.clients.images}
               title={CAROUSEL_DATA.clients.title}
@@ -335,10 +294,10 @@ export default function Home() {
               direction="left"
               speed={15}
             />
-          </div> */}
+          </div>
 
       {/* Authorized Brands Carousel */}
-      {/* <div>
+      <div>
             <ImageCarousel
               images={CAROUSEL_DATA.brands.images}
               title={CAROUSEL_DATA.brands.title}
@@ -348,8 +307,8 @@ export default function Home() {
             />
           </div>
 
-        </div> */}
-      {/* </section> */}
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="min-h-screen py-20 relative">
@@ -371,7 +330,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className=" text-gray-200 max-w-3xl mx-auto">
               Ready to start your next project? Let's discuss how we can help
               you achieve your goals.
             </p>
@@ -418,6 +377,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }
