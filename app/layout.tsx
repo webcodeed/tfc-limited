@@ -14,6 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://tlclimited.com'),
   title: "TFC Limited - Business Solutions & Consulting Services",
   description: "Professional business consulting, digital solutions, and project management services. TFC Limited delivers excellence through innovation and expertise.",
   keywords: "business consulting, digital solutions, project management, TFC Limited, professional services",
