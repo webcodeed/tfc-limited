@@ -14,6 +14,15 @@ import { NAVIGATION_CONFIG, COMPANY_INFO } from '../config/constants'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
+  const footerServices = [
+    'Two-Way Radio Communication',
+    'PABX & Intercom Systems',
+    'Satellite Internet',
+    'LAN & Line Plant',
+    'Remote Cordless Telephony',
+    'Mast & Tower Services'
+  ]
+
   return (
     <footer className="bg-ink-900 text-gray-300">
       {/* Main Footer Content */}
@@ -119,51 +128,17 @@ export default function Footer() {
                 Our Services
               </h4>
               <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
-                  >
-                    <span className="mr-2">›</span>
-                    Network Infrastructure
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
-                  >
-                    <span className="mr-2">›</span>
-                    Radio Communication
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
-                  >
-                    <span className="mr-2">›</span>
-                    Digital Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
-                  >
-                    <span className="mr-2">›</span>
-                    Field Engineering
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
-                  >
-                    <span className="mr-2">›</span>
-                    Technical Support
-                  </Link>
-                </li>
+                {footerServices.map((service, index) => (
+                  <li key={index}>
+                    <Link
+                      href="#services"
+                      className="text-sm hover:text-cyan-400 transition-colors duration-200 flex items-center"
+                    >
+                      <span className="mr-2">›</span>
+                      {service}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
