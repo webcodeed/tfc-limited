@@ -1,6 +1,6 @@
 // Navigation configuration
 export const NAVIGATION_CONFIG = {
-  phoneNumber: '+1234567890',
+  phoneNumber: '+2348033062445',
   companyName: 'TLC Limited',
   logoPath: '/img/TFC LOGO.png',
   sections: [
@@ -23,7 +23,7 @@ export const A11Y_CONFIG = {
 export const COMPANY_INFO = {
   name: 'TLC Limited',
   tagline: 'Your trusted partner in innovative business solutions',
-  phone: '+1 (555) 123-4567',
+  phone: '+234 8033062445',
   email: 'info@tLclimited.com',
   address: {
     street: '123 Business Street',
