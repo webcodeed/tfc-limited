@@ -23,7 +23,7 @@ export const A11Y_CONFIG = {
 export const COMPANY_INFO = {
   name: 'TLC Limited',
   tagline: 'Your trusted partner in innovative business solutions',
-  phone: '+234 8033062445',
+  phone: '+234 803 306 2445',
   email: 'info@tLclimited.com',
   address: {
     street: '123 Business Street',

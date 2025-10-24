@@ -327,10 +327,10 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl text-gray-200 font-bold mb-4">
               Get In Touch
             </h2>
-            <p className=" text-gray-200 max-w-3xl mx-auto">
+            <p className=" text-white max-w-3xl mx-auto">
               Ready to start your next project? Let&apos;s discuss how we can help
               you achieve your goals.
             </p>
@@ -362,7 +362,7 @@ export default function Home() {
                     Phone
                   </h4>
                   <p className="text-gray-200 text-xs sm:text-sm">
-                    +1 (555) 123-4567
+                    +234 803 306 2445 
                   </p>
                 </div>
               </div>
