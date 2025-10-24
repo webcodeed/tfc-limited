@@ -193,7 +193,7 @@ Contact the sender at: ${formData.email} or ${formData.phone}
             transition={{ duration: 0.3 }}
           >
             <p className="text-green-800 text-center text-sm">
-              Thank you! Your message has been sent successfully. We'll get back to you soon.
+              Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
             </p>
           </motion.div>
         )}
