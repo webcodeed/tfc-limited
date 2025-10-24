@@ -434,7 +434,7 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params }: any) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = blogPosts.find((p) => p.slug === slug)
   
@@ -457,7 +457,7 @@ export async function generateMetadata({ params }: any) {
   }
 }
 
-export default async function BlogPost({ params }: any) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = blogPosts.find((p) => p.slug === slug)
 
@@ -588,11 +588,11 @@ export default async function BlogPost({ params }: any) {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold text-ink-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-ink-900 mb-4">
             Need Telecommunications Solutions?
           </h2>
           <p className="text-lg text-ink-600 mb-6">
-            Let's discuss how we can help your business stay connected.
+            Let&apos;s discuss how we can help your business stay connected.
           </p>
           <Link
             href="/#contact"
