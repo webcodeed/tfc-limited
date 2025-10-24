@@ -19,7 +19,7 @@ const jsonLd = {
   logo: 'https://tfclimited.com/img/TFC LOGO.png',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+1-555-123-4567',
+    telephone: ' ⁠+2348033062445',
     contactType: 'customer service',
     availableLanguage: 'English',
   },
@@ -38,7 +38,7 @@ const jsonLd = {
   },
   serviceArea: {
     '@type': 'Country',
-    name: 'United States',
+    name: 'Nigeria',
   },
 }
 
@@ -160,7 +160,7 @@ export default function Home() {
                 Time and Life Communications Limited is a reputable telecommunications company in Nigeria and has been serving the communications needs of businesses, government agencies, homes, remote locations and industrial sites across the states of Nigeria (+FCT) for over 30 years.
               </p>
               <p className="text-md text-ink-600 leading-relaxed">
-                We specialize in reliable, field-proven systems built to perform in harsh, remote, and mission-critical environments. We take pride in our extensive experience and reputable partnerships, allowing us to deliver exceptional telecommunications solutions tailored to our clients' specific requirements.
+                We specialize in reliable, field-proven systems built to perform in harsh, remote, and mission-critical environments. We take pride in our extensive experience and reputable partnerships, allowing us to deliver exceptional telecommunications solutions tailored to our clients&apos; specific requirements.
               </p>
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="text-center">
@@ -214,12 +214,12 @@ export default function Home() {
                 </div>
                 
                 {/* Service Title */}
-                <h3 className="text-lg font-semibold text-ink-900 mb-2 group-hover:text-cyan-600 transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-ink-900 mb-2 px-2 md:px-0 group-hover:text-cyan-600 transition-colors duration-200">
                   {service.title}
                 </h3>
                 
                 {/* Service Description */}
-                <p className="text-md text-ink-600 leading-relaxed">
+                <p className="text-md px-2 md:px-0 text-ink-600 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -327,11 +327,11 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl font-bold mb-4">
               Get In Touch
             </h2>
             <p className=" text-gray-200 max-w-3xl mx-auto">
-              Ready to start your next project? Let's discuss how we can help
+              Ready to start your next project? Let&apos;s discuss how we can help
               you achieve your goals.
             </p>
           </div>
