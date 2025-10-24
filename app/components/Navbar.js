@@ -43,14 +43,13 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <button 
                 onClick={() => handleNavClick('#home')}
-                className={`flex items-center rounded-lg cursor-pointer`}
+                className={`flex items-center rounded-lg cursor-pointer relative w-14 h-16`}
                 aria-label="Go to home section"
               >
                 <Image
                   src={NAVIGATION_CONFIG.logoPath}
                   alt={`${NAVIGATION_CONFIG.companyName} Logo`}
-                  width={45}
-                  height={15}
+                  fill
                   // className="h-14 lg:h-16 w-auto"
                   priority
                   sizes="(max-width: 1024px) 120px, 140px"
