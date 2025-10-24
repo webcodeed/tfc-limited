@@ -179,7 +179,7 @@ Contact the sender at: ${formData.email} or ${formData.phone}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Get In Touch
+        Send Us A Message
       </motion.h3>
 
       {/* Success Message */}
