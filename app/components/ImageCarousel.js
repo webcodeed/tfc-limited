@@ -126,9 +126,6 @@ const ImageCarousel = ({ images, direction = 'left', speed = 20, title, descript
                   className="object-contain transition-all duration-300 hover:scale-105"
                   sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, 240px"
                   priority={index < images.length} // Prioritize first set of images
-                  onError={(e) => {
-                    console.log(`Failed to load image: ${image.src}`);
-                  }}
                   onLoad={() => {
                     // Ensure measurements happen after images load
                     if (index === images.length - 1 && !isReady) {
