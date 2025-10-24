@@ -8,14 +8,15 @@ export const NAVIGATION_CONFIG = {
     { href: '#about', label: 'About Us' },
     { href: '#services', label: 'Services' },
     { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' }
-  ]
+    { href: '#contact', label: 'Contact' },
+  ],
 }
 
 // Accessibility configurations
 export const A11Y_CONFIG = {
   navbarHeight: 10, // for scroll offset
-  focusRing: 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+  focusRing:
+    'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
 }
 
 // Company information
@@ -29,79 +30,104 @@ export const COMPANY_INFO = {
     suite: 'Suite 100',
     city: 'City',
     state: 'State',
-    zip: '12345'
-  }
+    zip: '12345',
+  },
 }
 
 // Services data
 export const SERVICES_DATA = [
   {
-    title: 'Network Infrastructure',
-    description: 'Complete telecommunications network design and implementation for mission-critical operations.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=500&fit=crop&crop=center'
+    title: 'Two-Way Radio Communication',
+    description:
+      'Supply, installation and maintenance of air band transceivers, marine radios, base and mobile units.',
+    image: 'https://i.ibb.co/whV3CK6c/two-way-radio.png',
   },
   {
-    title: 'Radio Communication',
-    description: 'Advanced radio systems for reliable communication in remote and challenging environments.',
-    image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=400&h=500&fit=crop&crop=center'
+    title: 'PABX & Intercom Systems',
+    description:
+      'Custom intercom and PABX systems for offices, hotels, and homes, suitable for various user scales.',
+    image: 'https://i.ibb.co/s9V1LwTm/pbx-system.png',
   },
   {
-    title: 'Digital Solutions',
-    description: 'Cutting-edge digital infrastructure and automation systems for modern enterprises.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=500&fit=crop&crop=center'
+    title: 'Satellite Internet',
+    description:
+      'Get connected in the most remote areas with our satellite internet solutions for offshore and rural locations.',
+    image: 'https://i.ibb.co/mYpQ3Pc/satellite-internet.png',
   },
   {
-    title: 'Field Engineering',
-    description: 'Expert field engineering services for telecommunications equipment installation and maintenance.',
-    image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=500&fit=crop&crop=center'
+    title: 'LAN & Line Plant',
+    description:
+      'Installation of local networks and external line infrastructure for enterprise and campus environments.',
+    image: 'https://i.ibb.co/CKVF3ypy/lan-and-line-plant.png',
   },
   {
-    title: 'Technical Support',
-    description: '24/7 technical support and maintenance services ensuring optimal system performance.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=500&fit=crop&crop=center'
+    title: 'Remote Cordless Telephony',
+    description:
+      'Voice, fax and solutions for remote setups with long-range telephone systems (100km).',
+    image: 'https://i.ibb.co/QF40bWVk/remote-cordless-telephony.png',
   },
   {
-    title: 'System Integration',
-    description: 'Seamless integration of telecommunications systems with existing business infrastructure.',
-    image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=500&fit=crop&crop=center'
+    title: 'Lightning & Radiation Protection',
+    description:
+      'Protection systems to safeguard equipment from lightning strikes and electromagnetic interference.',
+    image: 'https://i.ibb.co/V0rR39Gw/Lightning-Radiation-Protection.png',
   },
   {
-    title: 'Training & Development',
-    description: 'Comprehensive training programs for telecommunications equipment operation and maintenance.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=500&fit=crop&crop=center'
+    title: 'Mast & Tower Services',
+    description:
+      'Installation, maintenance and relocation of towers and masts of different sizes and shapes.',
+    image: 'https://i.ibb.co/Xxp2RMTk/Mast-Tower-Services.jpg',
   },
   {
-    title: 'Consulting Services',
-    description: 'Strategic telecommunications consulting to optimize communication infrastructure and operations.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=center'
-  }
+    title: 'Antenna/Feeder Installation',
+    description:
+      'Expert setup of antennas and feeder cables on towers and masts for optimal signal strength.',
+    image: 'https://i.ibb.co/d0nxjXX4/Antenna-Feeder-Installation.png',
+  },
+  {
+    title: 'Security & Alarm Systems',
+    description:
+      'Full installation of CCTV, alarms, and surveillance systems to protect homes and businesses.',
+    image: 'https://i.ibb.co/23ZQCYRW/Security-Alarm-Systems.jpg',
+  },
 ]
 
 // Carousel data
 export const CAROUSEL_DATA = {
   clients: {
     title: 'Trusted by Industry Leaders',
-    description: 'We proudly serve leading organizations across oil & gas, telecommunications, and maritime sectors, delivering excellence that drives their success forward.',
+    description:
+      'We proudly serve leading organizations across oil & gas, telecommunications, and maritime sectors, delivering excellence that drives their success forward.',
     images: [
       { src: 'https://i.ibb.co/xK2B54XC/11-PLC-Logo.jpg', alt: '11 PLC' },
       { src: 'https://i.ibb.co/p6dTKPSP/BEST-Logo.webp', alt: 'BEST' },
       { src: 'https://i.ibb.co/R4BBSJCq/CNSS-Logo.jpg', alt: 'CNSS' },
       { src: 'https://i.ibb.co/twKrFfpP/Energia-Logo.png', alt: 'Energia' },
-      { src: 'https://i.ibb.co/zVN3Xw3V/Midwestern-Logo.webp', alt: 'Midwestern' },
+      {
+        src: 'https://i.ibb.co/zVN3Xw3V/Midwestern-Logo.webp',
+        alt: 'Midwestern',
+      },
       { src: 'https://i.ibb.co/hJCnSG8s/Newcross-Logo.png', alt: 'Newcross' },
-      { src: 'https://i.ibb.co/LdS1NDQr/Nigerian-Ports-Logo.jpg', alt: 'Nigerian Ports Authority' },
+      {
+        src: 'https://i.ibb.co/LdS1NDQr/Nigerian-Ports-Logo.jpg',
+        alt: 'Nigerian Ports Authority',
+      },
       { src: 'https://i.ibb.co/tSDpr03/pan-ocean.webp', alt: 'Pan Ocean' },
-      { src: 'https://i.ibb.co/kgJYZDxm/Total-Logo.webp', alt: 'Total' }
-    ]
+      { src: 'https://i.ibb.co/kgJYZDxm/Total-Logo.webp', alt: 'Total' },
+    ],
   },
   brands: {
     title: 'Quality Equipment Brands',
-    description: 'We utilize industry-leading communication equipment from world-class manufacturers to deliver reliable, high-quality services to our clients.',
+    description:
+      'We utilize industry-leading communication equipment from world-class manufacturers to deliver reliable, high-quality services to our clients.',
     images: [
       { src: 'https://i.ibb.co/PzQdrYff/codan-LOGO.png', alt: 'Codan' },
       { src: 'https://i.ibb.co/d0nHkbWy/ICOM-LOGO.png', alt: 'ICOM' },
       { src: 'https://i.ibb.co/WWXKG11J/Motorola-Logo.png', alt: 'Motorola' },
-      { src: 'https://i.ibb.co/HpzNC150/PANASONIC-Logo.webp', alt: 'Panasonic' }
-    ]
-  }
+      {
+        src: 'https://i.ibb.co/HpzNC150/PANASONIC-Logo.webp',
+        alt: 'Panasonic',
+      },
+    ],
+  },
 }
