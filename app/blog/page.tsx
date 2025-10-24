@@ -456,11 +456,11 @@ export default function BlogPage() {
       <section className="py-20 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-ink-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-ink-900 mb-4">
               Ready to Get Started?
             </h2>
             <p className="text-lg text-ink-600 mb-8">
-              Let's discuss how our telecommunications solutions can help your business stay connected and competitive.
+              Let&apos;s discuss how our telecommunications solutions can help your business stay connected and competitive.
             </p>
             <Link
               href="/#contact"
