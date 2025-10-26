@@ -12,33 +12,40 @@ import { CAROUSEL_DATA, SERVICES_DATA } from '../config/constants'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'TFC Limited',
+  name: 'TLC Limited',
+  alternateName: 'Time and Life Communications Limited',
   description:
-    'Professional business consulting, digital solutions, and project management services.',
-  url: 'https://tfclimited.com',
-  logo: 'https://tfclimited.com/img/TFC LOGO.png',
+    'Advanced telecommunications and digital infrastructure solutions including two-way radio communication, PABX systems, LAN installation, security systems, and tower services across Nigeria.',
+  url: 'https://tlclimited.com',
+  logo: 'https://tlclimited.com/img/TLC LOGO.png',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: ' ⁠+2348033062445',
+    telephone: '+2348033062445',
     contactType: 'customer service',
-    availableLanguage: 'English',
+    email: 'info@tfclimited.com',
+    availableLanguage: ['English'],
+    areaServed: 'NG',
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '123 Business Street, Suite 100',
-    addressLocality: 'City',
-    addressRegion: 'State',
-    postalCode: '12345',
-    addressCountry: 'US',
+    addressLocality: 'Lagos',
+    addressRegion: 'Lagos State',
+    addressCountry: 'NG',
   },
-  foundingDate: '2014',
-  numberOfEmployees: {
-    '@type': 'QuantitativeValue',
-    value: '50',
-  },
-  serviceArea: {
+  foundingDate: '1994',
+  areaServed: {
     '@type': 'Country',
     name: 'Nigeria',
+  },
+  sameAs: [
+    // Add your social media profiles here when available
+    // 'https://www.facebook.com/tlclimited',
+    // 'https://www.linkedin.com/company/tlclimited',
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '50',
   },
 }
 
@@ -168,7 +175,7 @@ export default function Home() {
                   <div className="text-ink-600">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-600">10+</div>
+                  <div className="text-3xl font-bold text-cyan-600">30+</div>
                   <div className="text-ink-600">Years Experience</div>
                 </div>
               </div>
@@ -210,6 +217,7 @@ export default function Home() {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     unoptimized
+                    priority
                   />
                 </div>
                 
@@ -315,11 +323,12 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/img/contact us background.jpg"
+            src="https://i.ibb.co/v6qYsSMr/Screenshot-2025-10-26-112646.png"
             alt="Contact us background"
             fill
             className="object-cover"
             priority={false}
+            unoptimized
           />
           {/* <div className="absolute inset-0 bg-black/50"></div> */}
         </div>
