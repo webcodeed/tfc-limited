@@ -2,7 +2,7 @@
 export const NAVIGATION_CONFIG = {
   phoneNumber: '+2348033062445',
   companyName: 'TLC Limited',
-  logoPath: '/img/TFC LOGO.png',
+  logoPath: '/img/TLC LOGO.png',
   sections: [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About Us' },
@@ -48,12 +48,12 @@ export const SERVICES_DATA = [
       'Custom intercom and PABX systems for offices, hotels, and homes, suitable for various user scales.',
     image: 'https://i.ibb.co/s9V1LwTm/pbx-system.png',
   },
-  {
-    title: 'Satellite Internet',
-    description:
-      'Get connected in the most remote areas with our satellite internet solutions for offshore and rural locations.',
-    image: 'https://i.ibb.co/mYpQ3Pc/satellite-internet.png',
-  },
+  // {
+  //   title: 'Satellite Internet',
+  //   description:
+  //     'Get connected in the most remote areas with our satellite internet solutions for offshore and rural locations.',
+  //   image: 'https://i.ibb.co/mYpQ3Pc/satellite-internet.png',
+  // },
   {
     title: 'LAN & Line Plant',
     description:
