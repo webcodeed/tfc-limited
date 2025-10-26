@@ -12,8 +12,8 @@ const blogPosts = [
     slug: 'boost-operations-two-way-radio-systems',
     title: 'Boost Operations with Two-Way Radio Systems',
     excerpt: 'Leveraging two-way radio communication to enhance real-time coordination, safety, and efficiency across industries in Nigeria, especially where cellular networks are unreliable or overloaded.',
-    image: 'https://images.unsplash.com/photo-1520869562399-e772f042f422?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/4wZdwrZC/img5.jpg',
+    author: 'TLC Limited',
     date: 'October 15, 2024',
     readTime: '5 min read',
     category: 'Communication Solutions'
@@ -23,8 +23,8 @@ const blogPosts = [
     slug: 'protecting-assets-lightning-radiation-shielding',
     title: 'Protecting Assets with Lightning & Radiation Shielding Across Critical Sectors',
     excerpt: 'Exploring how effective lightning and radiation protection safeguards not only telecommunications but also critical infrastructure such as power plants, industrial facilities, data centers, and large venues.',
-    image: 'https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/Y7BN5ZjH/img3.jpg',
+    author: 'TLC Limited',
     date: 'October 8, 2024',
     readTime: '6 min read',
     category: 'Infrastructure'
@@ -34,8 +34,8 @@ const blogPosts = [
     slug: 'optimizing-mast-tower-services-business-growth',
     title: 'Optimizing Mast & Tower Services for Business Growth',
     excerpt: 'Understanding how expert mast and tower installation, maintenance, and relocation ensure communication reliability, operational efficiency, and safety in demanding environments across Nigeria.',
-    image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/bhgkMDn/img4.jpg',
+    author: 'TLC Limited',
     date: 'September 28, 2024',
     readTime: '6 min read',
     category: 'Infrastructure'
@@ -45,8 +45,8 @@ const blogPosts = [
     slug: 'mastering-lan-line-plant-scalable-networks',
     title: 'Mastering LAN & Line Plant for Scalable Networks',
     excerpt: 'How strategic LAN and line plant installations drive scalable, secure, and high-performance enterprise networks vital for operational excellence in Nigerian businesses and institutions.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/XrhCnDTV/img7.jpg',
+    author: 'TLC Limited',
     date: 'September 20, 2024',
     readTime: '7 min read',
     category: 'Technology'
@@ -56,8 +56,8 @@ const blogPosts = [
     slug: 'enhancing-communication-remote-cordless-telephony',
     title: 'Enhancing Communication with Remote Cordless Telephony',
     excerpt: 'Showcasing how remote cordless telephony solutions can extend reliable voice and fax connectivity beyond traditional limits, empowering businesses in hard-to-reach Nigerian locations to maintain seamless communication.',
-    image: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/wr6SfJ4Z/img6.jpg',
+    author: 'TLC Limited',
     date: 'September 12, 2024',
     readTime: '6 min read',
     category: 'Communication Solutions'
@@ -67,8 +67,8 @@ const blogPosts = [
     slug: 'maximizing-security-cctv-alarm-integration',
     title: 'Maximizing Security with CCTV & Alarm Integration',
     excerpt: 'Demonstrating how integrated CCTV and alarm systems enhance security, operational control, and incident response for businesses and government institutions in Nigeria.',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/0ppPcQvp/img2.jpg',
+    author: 'TLC Limited',
     date: 'August 30, 2024',
     readTime: '6 min read',
     category: 'Security Solutions'
@@ -78,8 +78,8 @@ const blogPosts = [
     slug: 'optimizing-pabx-intercom-systems-enterprise-efficiency',
     title: 'Optimizing PABX & Intercom Systems for Enterprise Efficiency',
     excerpt: 'Exploring how custom PABX and intercom installations improve internal communication, streamline operations, and enhance security in Nigerian offices, hotels, and homes.',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop',
-    author: 'TFC Limited',
+    image: 'https://i.ibb.co/Df0ypWmN/img1.jpg',
+    author: 'TLC Limited',
     date: 'August 18, 2024',
     readTime: '6 min read',
     category: 'Technology'
@@ -90,15 +90,15 @@ const blogPosts = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  name: 'TFC Limited Blog',
+  name: 'TLC Limited Blog',
   description: 'Insights, news, and updates about telecommunications and digital infrastructure solutions',
-  url: 'https://tfclimited.com/blog',
+  url: 'https://tlclimited.com/blog',
   publisher: {
     '@type': 'Organization',
-    name: 'TFC Limited',
+    name: 'TLC Limited',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://tfclimited.com/img/TFC LOGO.png'
+      url: 'https://tlclimited.com/img/TLC LOGO.png'
     }
   },
   blogPost: blogPosts.map(post => ({
@@ -115,10 +115,10 @@ const jsonLd = {
 }
 
 export const metadata = {
-  title: 'Blog - TFC Limited | Telecommunications Insights & News',
-  description: 'Stay updated with the latest insights, industry news, and expert perspectives on telecommunications and digital infrastructure from TFC Limited.',
+  title: 'Blog - TLC Limited | Telecommunications Insights & News',
+  description: 'Stay updated with the latest insights, industry news, and expert perspectives on telecommunications and digital infrastructure from TLC Limited.',
   openGraph: {
-    title: 'Blog - TFC Limited',
+    title: 'Blog - TLC Limited',
     description: 'Insights and updates about telecommunications and digital infrastructure solutions',
     type: 'website',
   }
