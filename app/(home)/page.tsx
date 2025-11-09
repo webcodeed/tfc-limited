@@ -12,17 +12,17 @@ import { CAROUSEL_DATA, SERVICES_DATA } from '../config/constants'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'TLC Limited',
+  name: 'TALC Limited',
   alternateName: 'Time and Life Communications Limited',
   description:
     'Advanced telecommunications and digital infrastructure solutions including two-way radio communication, PABX systems, LAN installation, security systems, and tower services across Nigeria.',
-  url: 'https://tlclimited.com',
-  logo: 'https://tlclimited.com/img/TLC LOGO.png',
+  url: 'https://talclimited.com',
+  logo: 'https://talclimited.com/img/TLC LOGO.png',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+2348033062445',
     contactType: 'customer service',
-    email: 'info@tfclimited.com',
+    email: 'info@talclimited.com',
     availableLanguage: ['English'],
     areaServed: 'NG',
   },

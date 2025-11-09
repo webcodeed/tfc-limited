@@ -14,22 +14,22 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://tlclimited.com'),
-  title: "TLC Limited - Telecommunications & Digital Infrastructure Solutions",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://talclimited.com'),
+  title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
   description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, LAN installation, security systems, and tower services. Connecting excellence through innovation.",
   keywords: "telecommunications Nigeria, two-way radio communication, PABX systems, intercom installation, LAN installation, security systems, CCTV installation, tower services, antenna installation, lightning protection, digital infrastructure",
-  authors: [{ name: "TLC Limited" }],
+  authors: [{ name: "TALC Limited" }],
   openGraph: {
-    title: "TLC Limited - Telecommunications & Digital Infrastructure Solutions",
+    title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
     description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, security systems, and tower services. Connecting excellence through innovation.",
-    url: "https://tlclimited.com",
-    siteName: "TLC Limited",
+    url: "https://talclimited.com",
+    siteName: "TALC Limited",
     images: [
       {
         url: "/img/TLC LOGO.png",
         width: 1200,
         height: 630,
-        alt: "TLC Limited - Telecommunications Solutions",
+        alt: "TALC Limited - Telecommunications Solutions",
       },
     ],
     locale: "en_NG",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TLC Limited - Telecommunications & Digital Infrastructure Solutions",
+    title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
     description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, security systems, and tower services.",
     images: ["/img/TLC LOGO.png"],
   },

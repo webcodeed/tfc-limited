@@ -1,7 +1,7 @@
 // Navigation configuration
 export const NAVIGATION_CONFIG = {
   phoneNumber: '+2348033062445',
-  companyName: 'TLC Limited',
+  companyName: 'TALC Limited',
   logoPath: '/img/TLC LOGO.png',
   sections: [
     { href: '#home', label: 'Home' },
@@ -21,16 +21,14 @@ export const A11Y_CONFIG = {
 
 // Company information
 export const COMPANY_INFO = {
-  name: 'TLC Limited',
+  name: 'TALC Limited',
   tagline: 'Your trusted partner in innovative business solutions',
   phone: '+234 803 306 2445',
-  email: 'info@tLclimited.com',
+  email: 'info@talclimited.com',
   address: {
-    street: '123 Business Street',
-    suite: 'Suite 100',
-    city: 'City',
-    state: 'State',
-    zip: '12345',
+    street: 'KM 12, Lekki-Epe Expressway, Ikota',
+    city: 'Lekki',
+    state: 'Lagos',
   },
 }
 
@@ -48,12 +46,6 @@ export const SERVICES_DATA = [
       'Custom intercom and PABX systems for offices, hotels, and homes, suitable for various user scales.',
     image: 'https://i.ibb.co/s9V1LwTm/pbx-system.png',
   },
-  // {
-  //   title: 'Satellite Internet',
-  //   description:
-  //     'Get connected in the most remote areas with our satellite internet solutions for offshore and rural locations.',
-  //   image: 'https://i.ibb.co/mYpQ3Pc/satellite-internet.png',
-  // },
   {
     title: 'LAN & Line Plant',
     description:

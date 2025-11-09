@@ -153,11 +153,10 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <div className="text-sm">
                   <p>
-                    {COMPANY_INFO.address.street}, {COMPANY_INFO.address.suite}
+                    {COMPANY_INFO.address.street},
                   </p>
                   <p>
-                    {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state}{' '}
-                    {COMPANY_INFO.address.zip}
+                    {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state}
                   </p>
                 </div>
               </li>
