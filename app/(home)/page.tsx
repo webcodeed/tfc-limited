@@ -66,7 +66,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://i.ibb.co/8gbXX5BJ/Tfc-Background-image.png"
+            src="https://i.ibb.co/Q37zrwL2/Tfc-Background-image.png"
             alt="TFC Background"
             fill
             className="object-cover"
@@ -100,7 +100,7 @@ export default function Home() {
             {/* Subheading */}
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
-                Advanced Telecommunications & Digital Infrastructure Solutions
+                Proffesional Telecommunications & Digital Infrastructure Solutions
               </p>
               <p className="text-base text-gray-300 max-w-2xl">
                 We Connect Your Vision to Reality with Expert Network
@@ -132,22 +132,11 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="min-h-screen py-20 bg-cream-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-ink-900 mb-6">
-              About TFC Limited
-            </h2>
-            <p className="text-xl text-ink-600 max-w-3xl mx-auto">
-              Building excellence through innovation, integrity, and unwavering
-              commitment to our clients
-            </p>
-          </div> */}
-
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-
             <div className="relative h-full order-2 lg:order-1">
               <div className="relative w-full h-[400px] lg:h-full overflow-hidden">
                 <Image
-                  src="https://i.ibb.co/wNrYBgRx/tfc-about.jpg"
+                  src="https://i.ibb.co/wZ0tYTRg/tfc-about.jpg"
                   alt="About us image"
                   fill
                   className="object-cover rounded-2xl"
@@ -251,23 +240,22 @@ export default function Home() {
           From government installations to private sector deployments, our work reflects over 30 years of consistent delivery and technical excellence.
           </p>
           </div>
-
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&crop=center',
+                image: 'https://i.ibb.co/MymGrX82/img1.jpg',
                 alt: 'Network Infrastructure Project'
               },
               {
-                image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=600&h=400&fit=crop&crop=center',
+                image: 'https://i.ibb.co/gLBwBHPW/img2.jpg',
                 alt: 'Radio Communication Project'
               },
               {
-                image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center',
+                image: 'https://i.ibb.co/Mw8pVc9/img3.jpg',
                 alt: 'Digital Solutions Project'
               },
               {
-                image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600&h=400&fit=crop&crop=center',
+                image: 'https://i.ibb.co/m5YSxcgP/img4.jpg',
                 alt: 'Field Engineering Project'
               }
             ].map((project, index) => (
@@ -323,14 +311,13 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="https://i.ibb.co/v6qYsSMr/Screenshot-2025-10-26-112646.png"
+            src="https://i.ibb.co/6jcCLGv/contact-section.png"
             alt="Contact us background"
             fill
             className="object-cover"
             priority={false}
             unoptimized
           />
-          {/* <div className="absolute inset-0 bg-black/50"></div> */}
         </div>
 
         {/* Content */}
@@ -357,7 +344,7 @@ export default function Home() {
                     Email
                   </h4>
                   <p className="text-gray-200 text-xs sm:text-sm">
-                    info@tfclimited.com
+                    info@talclimited.com
                   </p>
                 </div>
               </div>
