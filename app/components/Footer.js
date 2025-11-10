@@ -40,14 +40,14 @@ export default function Footer() {
                   unoptimized
                 />
               </div>
-              <h3 className="text-xl font-bold text-white">
-                {COMPANY_INFO.name}
+              <h3 className="text-lg font-bold text-white">
+                Time and Life Communications Limited
               </h3>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Professional telecommunications and digital infrastructure
               solutions. Building excellence through innovation and integrity
-              since 1994.
+              since 1992.
             </p>
 
             {/* Social Media Links */}
@@ -172,10 +172,19 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                 <Link
-                  href={`mailto:${COMPANY_INFO.email}`}
+                  href={`mailto:${COMPANY_INFO.email1}`}
                   className="text-sm hover:text-cyan-400 transition-colors duration-200"
                 >
-                  {COMPANY_INFO.email}
+                  {COMPANY_INFO.email1}
+                </Link>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                <Link
+                  href={`mailto:${COMPANY_INFO.email2}`}
+                  className="text-sm hover:text-cyan-400 transition-colors duration-200"
+                >
+                  {COMPANY_INFO.email2}
                 </Link>
               </li>
             </ul>
