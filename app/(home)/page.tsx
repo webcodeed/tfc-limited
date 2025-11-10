@@ -100,7 +100,7 @@ export default function Home() {
             {/* Subheading */}
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
-                Proffesional Telecommunications & Digital Infrastructure Solutions
+                Professional Telecommunications & Digital Infrastructure Solutions
               </p>
               <p className="text-base text-gray-300 max-w-2xl">
                 We Connect Your Vision to Reality with Expert Network
