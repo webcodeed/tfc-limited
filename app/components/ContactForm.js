@@ -28,7 +28,6 @@ const ContactForm = () => {
     { value: '', label: 'Select a Service' },
     { value: 'Two-Way Radio Communication', label: 'Two-Way Radio Communication' },
     { value: 'PABX & Intercom Systems', label: 'PABX & Intercom Systems' },
-    { value: 'Satellite Internet', label: 'Satellite Internet' },
     { value: 'LAN & Line Plant', label: 'LAN & Line Plant' },
     { value: 'Remote Cordless Telephony', label: 'Remote Cordless Telephony' },
     { value: 'Lightning & Radiation Protection', label: 'Lightning & Radiation Protection' },
