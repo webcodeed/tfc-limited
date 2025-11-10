@@ -24,45 +24,45 @@ export const COMPANY_INFO = {
   name: 'TALC Limited',
   tagline: 'Your trusted partner in innovative business solutions',
   phone: '+234 803 306 2445',
-  email: 'info@talclimited.com',
+  email1: 'info@talclimited.com',
+  email2:'timeandlifecom@yahoo.com',
   address: {
     street: 'KM 12, Lekki-Epe Expressway, Ikota',
     city: 'Lekki',
     state: 'Lagos',
   },
 }
-
 // Services data
 export const SERVICES_DATA = [
   {
     title: 'Two-Way Radio Communication',
     description:
       'Supply, installation and maintenance of air band transceivers, marine radios, base and mobile units.',
-    image: 'https://i.ibb.co/whV3CK6c/two-way-radio.png',
+    image: 'https://i.ibb.co/pjcJ4bb0/two-way-radio.png',
   },
   {
     title: 'PABX & Intercom Systems',
     description:
       'Custom intercom and PABX systems for offices, hotels, and homes, suitable for various user scales.',
-    image: 'https://i.ibb.co/s9V1LwTm/pbx-system.png',
+    image: 'https://i.ibb.co/bMWXShCZ/pbx-system.png',
   },
   {
     title: 'LAN & Line Plant',
     description:
       'Installation of local networks and external line infrastructure for enterprise and campus environments.',
-    image: 'https://i.ibb.co/CKVF3ypy/lan-and-line-plant.png',
+    image: 'https://i.ibb.co/WNm6jDzZ/lan-and-line-plant.png',
   },
   {
     title: 'Remote Cordless Telephony',
     description:
       'Voice, fax and solutions for remote setups with long-range telephone systems (100km).',
-    image: 'https://i.ibb.co/QF40bWVk/remote-cordless-telephony.png',
+    image: 'https://i.ibb.co/KctSZKF5/remote-cordless-telephony.png',
   },
   {
     title: 'Lightning & Radiation Protection',
     description:
       'Protection systems to safeguard equipment from lightning strikes and electromagnetic interference.',
-    image: 'https://i.ibb.co/V0rR39Gw/Lightning-Radiation-Protection.png',
+    image: 'https://i.ibb.co/MxDzk5cb/Lightning-Radiation-Protection.png',
   },
   {
     title: 'Mast & Tower Services',
@@ -74,7 +74,7 @@ export const SERVICES_DATA = [
     title: 'Antenna/Feeder Installation',
     description:
       'Expert setup of antennas and feeder cables on towers and masts for optimal signal strength.',
-    image: 'https://i.ibb.co/d0nxjXX4/Antenna-Feeder-Installation.png',
+    image: 'https://i.ibb.co/2YYxJ8Lh/Antenna-Feeder-Installation.png',
   },
   {
     title: 'Security & Alarm Systems',
