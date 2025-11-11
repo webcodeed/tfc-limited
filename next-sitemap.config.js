@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://example.com', // <-- change to your site
+  siteUrl: 'https://talclimited.com', // <-- change to your site
   generateRobotsTxt: true,
   sitemapSize: 5000,
   changefreq: 'daily',
