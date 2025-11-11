@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://talclimited.com
-
 # Sitemaps
 Sitemap: https://talclimited.com/sitemap.xml
