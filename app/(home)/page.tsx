@@ -227,7 +227,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects" className="min-h-screen py-20 bg-cream-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
           <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2 mb-16'>
           <div className="">
             <TitleHead item="Our projects" />
@@ -243,25 +243,25 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                image: 'https://i.ibb.co/MymGrX82/img1.jpg',
-                alt: 'Network Infrastructure Project'
-              },
-              {
-                image: 'https://i.ibb.co/gLBwBHPW/img2.jpg',
-                alt: 'Radio Communication Project'
-              },
-              {
                 image: 'https://i.ibb.co/Mw8pVc9/img3.jpg',
                 alt: 'Digital Solutions Project'
               },
               {
+                image: 'https://i.ibb.co/MymGrX82/img1.jpg',
+                alt: 'Network Infrastructure Project'
+              },
+              {
                 image: 'https://i.ibb.co/m5YSxcgP/img4.jpg',
                 alt: 'Field Engineering Project'
+              },
+              {
+                image: 'https://i.ibb.co/gLBwBHPW/img2.jpg',
+                alt: 'Radio Communication Project'
               }
             ].map((project, index) => (
               <div
                 key={index}
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg"
+                className="group relative aspect-[3/4] md:aspect-[4/4] overflow-hidden rounded-lg"
               >
                 <Image
                   src={project.image}
