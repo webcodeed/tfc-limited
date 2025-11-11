@@ -4,6 +4,10 @@ import {
   Mail,
   Phone,
   MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
 } from 'lucide-react'
 import { NAVIGATION_CONFIG, COMPANY_INFO } from '../config/constants'
 
@@ -45,6 +49,46 @@ export default function Footer() {
               solutions. Building excellence through innovation and integrity
               since 1992.
             </p>
+
+            {/* Social Media Links */}
+            {/* <div className="flex space-x-4 pt-2">
+              <Link
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-gray-800 hover:bg-cyan-600 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-gray-800 hover:bg-cyan-600 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-gray-800 hover:bg-cyan-600 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-gray-800 hover:bg-cyan-600 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </Link>
+            </div> */}
           </div>
 
           {/* Quick Links and Services - Side by Side on Small Screens */}
