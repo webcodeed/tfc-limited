@@ -65,14 +65,11 @@ export default function Home() {
       >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://i.ibb.co/Q37zrwL2/Tfc-Background-image.png"
-            alt="TFC Background"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-            unoptimized
+          <img
+            src="/img/Tfc-Background-image.png"
+            alt="TALC Background Image"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
           />
         </div>
         {/* Background Overlay */}
