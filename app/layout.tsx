@@ -15,12 +15,29 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://talclimited.com'),
-  title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
+  title: "Time And Life Communications Limited - Telecommunications & Digital Infrastructure Solutions",
   description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, LAN installation, security systems, and tower services. Connecting excellence through innovation.",
   keywords: "telecommunications Nigeria, two-way radio communication, PABX systems, intercom installation, LAN installation, security systems, CCTV installation, tower services, antenna installation, lightning protection, digital infrastructure",
-  authors: [{ name: "TALC Limited" }],
+  authors: [{ name: "Time And Life Communications Limited" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/img/TLC LOGO.png", sizes: "32x32", type: "image/png" },
+      { url: "/img/TLC LOGO.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/img/TLC LOGO.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "apple-touch-icon-precomposed",
+        url: "/img/TLC LOGO.png",
+      },
+    ],
+  },
   openGraph: {
-    title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
+    title: "Time And Life Communications Limited - Telecommunications & Digital Infrastructure Solutions",
     description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, security systems, and tower services. Connecting excellence through innovation.",
     url: "https://talclimited.com",
     siteName: "TALC Limited",
@@ -37,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TALC Limited - Telecommunications & Digital Infrastructure Solutions",
+    title: "Time And Life Communications Limited - Telecommunications & Digital Infrastructure Solutions",
     description: "Advanced telecommunications solutions including two-way radio communication, PABX systems, security systems, and tower services.",
     images: ["/img/TLC LOGO.png"],
   },
