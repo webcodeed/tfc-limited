@@ -13,7 +13,7 @@ const blogPosts = [
     title: 'Boost Operations with Two-Way Radio Systems',
     excerpt: 'Leveraging two-way radio communication to enhance real-time coordination, safety, and efficiency across industries in Nigeria, especially where cellular networks are unreliable or overloaded.',
     image: 'https://i.ibb.co/4wZdwrZC/img5.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'October 15, 2024',
     readTime: '5 min read',
     category: 'Communication Solutions'
@@ -24,7 +24,7 @@ const blogPosts = [
     title: 'Protecting Assets with Lightning & Radiation Shielding Across Critical Sectors',
     excerpt: 'Exploring how effective lightning and radiation protection safeguards not only telecommunications but also critical infrastructure such as power plants, industrial facilities, data centers, and large venues.',
     image: 'https://i.ibb.co/Y7BN5ZjH/img3.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'October 8, 2024',
     readTime: '6 min read',
     category: 'Infrastructure'
@@ -35,7 +35,7 @@ const blogPosts = [
     title: 'Optimizing Mast & Tower Services for Business Growth',
     excerpt: 'Understanding how expert mast and tower installation, maintenance, and relocation ensure communication reliability, operational efficiency, and safety in demanding environments across Nigeria.',
     image: 'https://i.ibb.co/bhgkMDn/img4.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'September 28, 2024',
     readTime: '6 min read',
     category: 'Infrastructure'
@@ -46,7 +46,7 @@ const blogPosts = [
     title: 'Mastering LAN & Line Plant for Scalable Networks',
     excerpt: 'How strategic LAN and line plant installations drive scalable, secure, and high-performance enterprise networks vital for operational excellence in Nigerian businesses and institutions.',
     image: 'https://i.ibb.co/XrhCnDTV/img7.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'September 20, 2024',
     readTime: '7 min read',
     category: 'Technology'
@@ -57,7 +57,7 @@ const blogPosts = [
     title: 'Enhancing Communication with Remote Cordless Telephony',
     excerpt: 'Showcasing how remote cordless telephony solutions can extend reliable voice and fax connectivity beyond traditional limits, empowering businesses in hard-to-reach Nigerian locations to maintain seamless communication.',
     image: 'https://i.ibb.co/wr6SfJ4Z/img6.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'September 12, 2024',
     readTime: '6 min read',
     category: 'Communication Solutions'
@@ -68,7 +68,7 @@ const blogPosts = [
     title: 'Maximizing Security with CCTV & Alarm Integration',
     excerpt: 'Demonstrating how integrated CCTV and alarm systems enhance security, operational control, and incident response for businesses and government institutions in Nigeria.',
     image: 'https://i.ibb.co/0ppPcQvp/img2.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'August 30, 2024',
     readTime: '6 min read',
     category: 'Security Solutions'
@@ -79,7 +79,7 @@ const blogPosts = [
     title: 'Optimizing PABX & Intercom Systems for Enterprise Efficiency',
     excerpt: 'Exploring how custom PABX and intercom installations improve internal communication, streamline operations, and enhance security in Nigerian offices, hotels, and homes.',
     image: 'https://i.ibb.co/Df0ypWmN/img1.jpg',
-    author: 'TALC Limited',
+    author: 'Time And Life Communications Limited',
     date: 'August 18, 2024',
     readTime: '6 min read',
     category: 'Technology'
@@ -90,12 +90,12 @@ const blogPosts = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  name: 'TALC Limited Blog',
+  name: 'Time And Life Communications Limited Blog',
   description: 'Insights, news, and updates about telecommunications and digital infrastructure solutions',
   url: 'https://talclimited.com/blog',
   publisher: {
     '@type': 'Organization',
-    name: 'TALC Limited',
+    name: 'Time And Life Communications Limited',
     logo: {
       '@type': 'ImageObject',
       url: 'https://talclimited.com/img/TLC LOGO.png'
@@ -115,10 +115,10 @@ const jsonLd = {
 }
 
 export const metadata = {
-  title: 'Blog - TALC Limited | Telecommunications Insights & News',
+  title: 'Blog - Time And Life Communications Limited | Telecommunications Insights & News',
   description: 'Stay updated with the latest insights, industry news, and expert perspectives on telecommunications and digital infrastructure from Time and Life Communications Limited.',
   openGraph: {
-    title: 'Blog - TALC Limited',
+    title: 'Blog - Time And Life Communications Limited',
     description: 'Insights and updates about telecommunications and digital infrastructure solutions',
     type: 'website',
   }
